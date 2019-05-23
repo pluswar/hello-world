@@ -1,6 +1,6 @@
-//alert('Im Working. IM Js ')
-console.log('Im Working. IM Js ')
-const a = 221 ;
-b = a - 5 ;
-a = 4
-console.log(b, a);
+function sayHello(name){
+  console.log('Hello! ' + name);
+}
+
+sayHello("Hyuck Jae");
+console.log("HI");
