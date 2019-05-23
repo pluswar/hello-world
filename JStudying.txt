@@ -1,0 +1,73 @@
+//alert('Im Working. IM Js ')
+console.log('Im Working. IM Js ')
+const a = 221 ;
+b = a - 5 ;
+console.log(b, a);
+/*String
+const what = "수여니";
+*/
+/*const wat = true;
+console.log(wat);
+*/
+/*Number
+const wat = 666;
+*/
+/*Float
+const wat = 55.1;
+*/
+
+// Array , Object
+const info = {
+  name:"HanHyuckJae",
+  age:"25",
+  gender:"Mail",
+  isHandsome:false,
+  favMovies: ["Along the gods", "Avengers", "Spider man"],
+  favFood: [
+    {
+      name:"Kimchi",
+      fatty:false
+    },
+    {
+      name:"CHeese burger",
+       fatty:true
+     }
+   ]
+}
+console.log(info)
+
+
+/*function sayHello(name, age){
+  //console.log(`Hello ${name} you are ${age} years old`)
+  return `Hello ${name} you are ${age} years old` ;
+}
+
+const greetName = sayHello("Hyuck Jae!!", 15);
+*/
+
+//Calculator
+const calculator = {
+  plus: function(a, b){
+    return a+b;
+  },
+  minus: function(a, b){
+    return a-b;
+  },
+  multiply: function(a, b){
+    return a*b;
+  },
+  divide: function(a, b){
+    return a/b;
+  }
+}
+
+
+const plus = calculator.plus(5, 5);
+const minus = calculator.minus(5, 5);
+const multi = calculator.multiply(5, 5);
+const divide = calculator.divide(5, 5);
+
+console.log(plus);
+console.log(minus);
+console.log(multi);
+console.log(divide);
