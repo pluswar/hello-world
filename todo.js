@@ -7,14 +7,20 @@ const TODOS_LS = 'toDos';
 let toDos = [];
 
 function deleteAllData() {
-  localStorage.clear();
-  const cleanToDoAll = toDos.filter(function(toDo) {
-    return 0;
-  });
-  toDos = cleanToDoAll;
-  saveToDos();
-  alert("모든 데이터 삭제 완료");
-  history.go(0);
+  const deleteMessage = confirm("모든 데이터를 삭제할래요?ㅠㅠ");
+  if (deleteMessage) {
+    localStorage.clear();
+    const cleanToDoAll = toDos.filter(function(toDo) {
+      return 0;
+    });
+    toDos = cleanToDoAll;
+    saveToDos();
+
+    history.go(0);
+  } else {
+
+  }
+
 }
 
 function deleteToDO(event){
@@ -38,7 +44,7 @@ function paintToDo(text){
     const span = document.createElement("span");
     const newId = toDos.length + 1 ;
 
-    delBtn.style.color = 'yellow';
+    delBtn.style.color = 'red';
     delBtn.style.background = 'none';
     delBtn.style.border = 'none';
     delBtn.style.fontSize = '100%';
