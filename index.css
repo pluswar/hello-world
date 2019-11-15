@@ -11,13 +11,11 @@ h1{
   transition: color 0.5s ease-in-out;
   text-align: center;
 }
-ul{
-  display: table;
-}
 span{
   color: #DDDBCB;
   font-size:150%;
   transition: color 3s ease-in-out;
+  word-break:break-all;
 }
 input{
   background: none;
