@@ -13,6 +13,13 @@ span{
   font-size:200%;
   transition: color 3s ease-in-out;
 }
+input{
+  background: none;
+  font-size:100%;
+  color: #DDDBCB;
+  border:none;
+  outline: none;
+}
 .form,
 .greetings{
   color: #FCBA04;
