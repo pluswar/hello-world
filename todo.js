@@ -6,6 +6,17 @@ const TODOS_LS = 'toDos';
 
 let toDos = [];
 
+function deleteAllData() {
+  localStorage.clear();
+  const cleanToDoAll = toDos.filter(function(toDo) {
+    return 0;
+  });
+  toDos = cleanToDoAll;
+  saveToDos();
+  alert("모든 데이터 삭제 완료");
+  history.go(0);
+}
+
 function deleteToDO(event){
   const btn = event.target;
   const li = btn.parentNode;
