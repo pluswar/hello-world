@@ -27,7 +27,7 @@ function paintToDo(text){
     const span = document.createElement("span");
     const newId = toDos.length + 1 ;
 
-    delBtn.style.color = 'red';
+    delBtn.style.color = 'yellow';
     delBtn.style.background = 'none';
     delBtn.style.border = 'none';
     delBtn.style.fontSize = '100%';
