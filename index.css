@@ -1,16 +1,21 @@
 body {
   background-color: #000000;
   font-size: 50px;
-  text-align: center;
 }
 h1{
   color: #0DAB76;
   font-size:300%;
   transition: color 0.5s ease-in-out;
+  text-align: center;
 }
-
+span{
+  color: #DDDBCB;
+  font-size:200%;
+  transition: color 3s ease-in-out;
+}
 .form,
 .greetings{
+  color: #FCBA04;
   display: none;
 }
 
